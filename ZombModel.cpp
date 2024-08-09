@@ -2,6 +2,7 @@
 #include <string>
 #include <ctime>
 #include <cstdlib>
+#include <vector>
 
 class Actor {
 private: 
@@ -83,19 +84,21 @@ public:
         }
 }
 
+std::
 int main() {
     // Example usage
     std::string name1 = "Levis Thomas";
     std::stirng name2 = "Louis Thomas";
+    std::string name3 = "Owen O Connor";
+    std::string name4 = "Gwen Mathews"
 
-    Actor map[2];
-    map[0] = new Human(name1, 20, 5, 10);
-    map[1] = new Human(name2, 20, 6, 8);
+    Actor* map[2][2] = {
+        {new Human(name1, 20, 5, 10), new Human(name2, 20, 6, 8)},
+        {new Human(name3, 20, 5, 10), new Human(name4, 20, 6, 8)}
+    };
 
-    Zombie undead;
-        undead = map[1];
+
 
     return 0;
-
 
 }
